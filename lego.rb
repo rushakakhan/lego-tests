@@ -1,6 +1,6 @@
 class LegoHat
 
-  attr_accessor :ize, :colour, :style
+  attr_accessor :size, :colour, :style
 
   def initialize(size, colour, style)
     @size = size_word
@@ -33,9 +33,9 @@ end
 
 class LegoMinifigure
 
-  attr_accessor :name, :hat:left_item, :right_item
+  attr_accessor :name, :hat, :left_item, :right_item
 
-  def initialize(name, hat=nil, left_item = nil, right_item=nil)
+  def initialize(name, hat = nil, left_item = nil, right_item = nil)
     @name = name
     @hat = hat
     @left_item = left_item
