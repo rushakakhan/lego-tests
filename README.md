@@ -1,4 +1,4 @@
-# Tutorial 4 - Unit Testing (Pair Programming)
+# Unit Testing (Pair Programming)
 
 Today we will be learning how to write unit tests in Ruby using MiniTest.
 
