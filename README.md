@@ -1,19 +1,22 @@
-# Unit Testing (Pair Programming)
+In this workshop you'll continue writing unit tests in Ruby using MiniTest.
 
-Today we will be learning how to write unit tests in Ruby using MiniTest.
+1. Clone the repo to your MacBook.
 
-## Lego
+2. Take a look at the code in `lego.rb`.
 
-1. Take a look at the code in lego.rb.
+3. Create a PR and in it describe:
+    * each class
+    * the purpose of each method in the class
 
-2. Identify the purpose of the classes.
+4. Next, identify the following:
+    * The expected behaviours (i.e. what does the method expect as input?).
+    * The limits of the cases of expected behaviour (i.e. how many arguments can the method take?) .
+    * Any exceptional/error cases.
 
-3. Identify the purpose of the methods.
+5. Create a new file called `lego_test.rb`.
 
-4. Identify the groups of expected behaviour.
+6. In it, create tests for each of the above cases that you've identified. Remember to make commits along the way!
 
-5. Identify the limits of the cases of expected behaviour.
+7. Push `lego_test.rb` to GitHub.
 
-6. Identify any exceptional/error cases.
-
-7. Test each of these cases separately.
+8. Submit the link to your PR in Canvas.
