@@ -3,7 +3,7 @@ class LegoHat
   attr_accessor :size, :colour, :style
 
   def initialize(size, colour, style)
-    @size = size_word
+    @size = size
     @colour = colour
     @style = style
   end
