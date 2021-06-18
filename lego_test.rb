@@ -86,10 +86,17 @@ class TestLego < Minitest::Test
     assert(@lego_jim.is_stylish?)
   end
 
-  def test_is_stylish_on_figure_without_hat
+  def test_is_stylish_raises_error_on_figure_without_hat
     assert_raises(NoMethodError) do
       @lego_jim.is_stylish?
     end
+  end
+
+  def test_swap_hands_works
+    @lego_jim.place_in_left_hand(@lego_item)
+    @lego_jim.place_in_right_hand(@lego_item_heavy)
+    @lego_jim.swap_hands
+    assert(@lego_jim.right_item == @lego_item && @lego_jim.left_item == @lego_item_heavy)
   end
 
   def test_is_strong_when_figure_has_no_items
