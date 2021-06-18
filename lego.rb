@@ -76,7 +76,7 @@ class LegoMinifigure
       else
         item_connector = " and "
       end
-      "#{item_connector}#{@right_item} in the right hand"
+      "#{item_connector} #{@right_item} in the right hand"
     else
       ""
     end
