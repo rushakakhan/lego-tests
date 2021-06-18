@@ -9,7 +9,7 @@ class LegoHat
   end
 
   def to_s
-    "a #{size_word} #{colour} #{@style}"
+    "a #{size} #{colour} #{@style}"
   end
 end
 
@@ -48,7 +48,7 @@ class LegoMinifigure
 
   def hat_words
     if @hat
-      ", who is wearing #{@hat}"
+      ", who is wearing #{@hat.to_s}"
     else
       ""
     end
@@ -61,7 +61,7 @@ class LegoMinifigure
       else
         item_connector = " and is holding"
       end
-      "#{item_connector} #{@left_item} in the left hand"
+      "#{item_connector} #{@left_item.to_s} in the left hand"
     else
       ""
     end
@@ -74,9 +74,9 @@ class LegoMinifigure
       elsif @left_item == nil
         item_connector = " and is holding"
       else
-        item_connector = " and "
+        item_connector = " and"
       end
-      "#{item_connector}#{@right_item} in the right hand"
+      "#{item_connector} #{@right_item.to_s} in the right hand"
     else
       ""
     end
