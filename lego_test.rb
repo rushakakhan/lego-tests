@@ -73,6 +73,14 @@ class TestLego < Minitest::Test
     assert_equal(expected, @lego_jim.to_s)
   end
 
+  def test_to_string_on_figure_with_hat_and_both_items
+    @lego_jim.wear_hat(@lego_hat.to_s)
+    @lego_jim.place_in_left_hand(@lego_item.to_s)
+    @lego_jim.place_in_right_hand(@lego_item.to_s)
+    expected = "A Lego minifigure named Jim, who is wearing a medium blue ball cap and is holding a 5 gram Wand in the left hand and a 5 gram Wand in the right hand."
+    assert_equal(expected, @lego_jim.to_s)
+  end
+
   def test_is_strong_when_figure_has_no_items
     assert_raises(NoMethodError) do
       @lego_jim.is_strong?
