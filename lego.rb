@@ -74,7 +74,7 @@ class LegoMinifigure
       elsif @left_item == nil
         item_connector = " and is holding"
       else
-        item_connector = " and "
+        item_connector = " and"
       end
       "#{item_connector} #{@right_item} in the right hand"
     else
